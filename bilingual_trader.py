@@ -15,7 +15,7 @@ model = WhisperModel(model_size, device=device, compute_type="float16")
 
 # --- 2. File Path Handling ---
 # Target local WAV file (e.g., your converted TED-Ed video audio)
-AUDIO_FILE = "./inputs/audio.wav" 
+AUDIO_FILE = "./inputs/TED-Ed.mp3"
 file_stem = os.path.splitext(os.path.basename(AUDIO_FILE))[0]
 OUTPUT_TXT = os.path.join("./outputs", f"{file_stem}.txt") # Enforced .txt output
 
